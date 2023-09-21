@@ -3,7 +3,9 @@
 ## Step 1: Compiling Gromacs 2022.5
 Download GROMACS 2022.5 from here: https://manual.gromacs.org/documentation/2022.5/download.html
 ```
-cd ..
+interactive
+module load gcc-11.2.0-gcc-11.2.0
+module load cuda-11.7.0-gcc-11.2.0
 tar xfz gromacs-2022.5.tar.gz
 cd gromacs-2022.5
 mkdir build
