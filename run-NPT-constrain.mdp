@@ -14,7 +14,7 @@ comm-mode               = Linear    ; remove only COM translation (liquids in PB
 ; Bond parameters
 continuation            = yes       ; first dynamics run
 constraint_algorithm    = lincs     ; holonomic constraints
-constraints             = all-bonds ; all bonds lengths are constrained
+constraints             = h-bonds   ; all bonds lengths are constrained
 lincs_iter              = 1         ; accuracy of LINCS
 lincs_order             = 4         ; also related to accuracy
 ; Nonbonded settings
