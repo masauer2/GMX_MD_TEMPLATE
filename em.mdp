@@ -4,7 +4,6 @@
 ;	Input file
 ;
 constraints         =  none
-define              =  -DFLEXIBLE
 integrator          =  steep
 nsteps              =  1000
 nstxout             =  50
