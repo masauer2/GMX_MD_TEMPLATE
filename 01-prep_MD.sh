@@ -10,7 +10,7 @@
 # Generate topology (amber force field)
 gmx=gmx_plumed
 protein=complex.pdb
-
+salt=0.15
 files=(
 complex.pdb
 )
@@ -37,7 +37,7 @@ ${gmx} editconf -f complex.gro -box 8 8 8 -o box.gro >& editconf.out
 ${gmx} solvate -cp box.gro -cs -p complex.top -o solv.gro >& solvate.out
 
 ${gmx} grompp -f ions.mdp -c solv.gro -p complex.top -o ions.tpr
-${gmx} genion -s ions.tpr -o ions.gro -p complex.top -pname NA -nname CL -neutral << STOP
+${gmx} genion -s ions.tpr -o ions.gro -p complex.top -pname NA -nname CL -neutral -conc ${salt} << STOP
 13
 STOP
 
