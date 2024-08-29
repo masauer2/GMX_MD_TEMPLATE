@@ -1,5 +1,7 @@
 # Template from GROMACS Simulations
-This repository is an example for how to run simple molecular dynamics simulations with GROMACS on the ASU Supercomputer (Sol).
+This repository is an example for how to run simple molecular dynamics simulations with **GROMACS** on the ASU Supercomputer (Sol).
+> [!IMPORTANT]  
+> The provided `.sh` scripts are designed to work on the **ASU Sol Supercomputer**. Other supercomputers will have different module requirements and `slurm` configurations. Check with your administrator for proper `SBATCH` instructions.
 
 ## Step 1: Compiling Gromacs 2022.5
 Download GROMACS 2022.5 from here: https://manual.gromacs.org/documentation/2022.5/download.html
